@@ -1,0 +1,78 @@
+.SideDiv {
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    margin: 30px 20px;
+    padding: 20px 30px;
+    -webkit-box-shadow: -1px -1px 40px 2px rgb(124, 0, 239);
+    -moz-box-shadow: -1px -1px 40px 2px rgba(124, 0, 239);
+    box-shadow: -1px -1px 40px 2px rgba(124, 0, 239);
+    opacity: .98;
+}
+
+.btn-signin {
+    color: #8a2be2;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-signin:hover {
+    color: #ffffff;
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    border-radius: 0px;
+}
+
+.btn-signup {
+    color: #ffffff;
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    border-radius: 0px;
+}
+
+.btn-signup:hover {
+    color: #8a2be2;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 0px;
+}
+
+.form-control {
+    border-bottom: 1px solid #ced4da;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-radius: 0px;
+}
+
+.form-control:focus {
+    border-bottom: 1px solid #8a2be2 !important;
+    ;
+    box-shadow: 0 0 0px rgba(98, 101, 228, 1) !important;
+}
+
+.text {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 0%, #8a2be2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .text {
+        font-size: 40px;
+    }
+}
+
+.bottomshadow {
+    -webkit-box-shadow: -1px -14px 40px -5px rgba(250, 250, 250, 1);
+    -moz-box-shadow: -1px -14px 40px -5px rgba(250, 250, 250, 1);
+    box-shadow:-1px -12px 30px -5px rgb(232, 232, 232);
+}

@@ -1,0 +1,16 @@
+<div class="col-md-12 align-items-stretch">
+    <span class="MessageSpan">{{Ques.Question}}</span>
+    <div class="radio-toolbar" *ngFor="let opt of Ques.Options" style="border-top: 1px solid #e8e8e8;  padding: 2px;  margin-bottom: -10px;">
+      <label class="form-check-inline">
+        <input class="form-check-input" [disabled]="Ansred==undefined ? false : true" (click)="ChosenOption(opt.value,Ques.QuestionId)" type="radio" id="{{opt.value+Ques.QuestionId}}"
+          name="{{Ques.QuestionId}}" [value]="true">
+        <label for="{{opt.value+Ques.QuestionId}}">[{{opt.value}}] {{opt.detail}}</label>
+      </label>
+    </div>
+    <div *ngIf="Ansred!=undefined">
+      <li class="ListNone"><span [className]="Ansred.Answered" class="F14 LightBlack">[ {{Ansred.Answered}} ]</span></li>
+      <li class="ListNone"><span class="F14 LightBlack">| Your : [ {{Ansred.SelectedAnswer}} ] | </span></li>
+      <li class="ListNone"><span class="F14 LightBlack">Actual : [ {{Ansred.CorrectAnswer}} ]</span></li>
+    </div>
+  
+  </div>
